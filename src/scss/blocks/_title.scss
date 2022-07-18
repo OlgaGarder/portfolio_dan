@@ -1,0 +1,28 @@
+.h1 {
+    @include h1;
+    @include my(15px,0);
+}
+
+.h2 {
+    @include h2;
+    @include my(0);
+
+    @include animate-text;
+}
+
+.h4 {
+    @include h4;
+    @include my(0);
+}
+
+p {
+    @include p;
+}
+
+.titles {
+    text-align: center;
+}
+
+.is-inview .h2 {
+    transform: translate3d(0, 0, 0);
+}

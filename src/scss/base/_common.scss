@@ -1,0 +1,25 @@
+body{
+  font-family: $font-family__default;
+  font-weight: 300;
+  margin:0;
+  padding:0;
+  color: $color__default;
+  overflow: hidden;
+}
+ 
+.container{
+  max-width: 1800px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+img{
+  max-width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:50% 50%;
+}
+
+.data-scroll {
+  overflow: hidden;
+}

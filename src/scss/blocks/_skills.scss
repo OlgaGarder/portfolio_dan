@@ -1,0 +1,96 @@
+.skills {
+    @include my(250px,200px);
+    height: 100%;
+    .titles {
+        @include my(0,50px);
+    }
+}
+
+.skills__item {
+    @extend %flex-column;
+    @extend %space-end;
+    position: relative;
+    background: $color__gray;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    @media (min-width:$desktop-width-s) {
+       // @include wh(20%,250px);
+       @include flex-width(100%/12*3.5);
+       height: 150px;
+    }
+    &.skills__item_1 {
+        @media (min-width:$desktop-width-s) {
+            top: 10%;
+            left: 10%;
+        }
+    }
+
+    &.skills__item_2 {
+        @media (min-width:$desktop-width-s) {
+            top: 10%;
+            left: 65%;
+        }
+    }
+
+    &.skills__item_3 {
+        @media (min-width:$desktop-width-s) {
+            top: -10%;
+            left: 35%;
+        }
+    }
+
+    &.skills__item_4 {
+        @media (min-width:$desktop-width-s) {
+            top: 0%;
+            left: 0%;
+        }
+    }
+
+    &.skills__item_5 {
+        @media (min-width:$desktop-width-s) {
+            top: 0%;
+            left: 60%;
+        }
+    }
+
+    &.skills__item_6 {
+        @media (min-width:$desktop-width-s) {
+            top: 0%;
+            left: 20%;
+        }
+    }
+
+    &.skills__item_7 {
+        @media (min-width:$desktop-width-s) {
+            top: 0%;
+            left: 40%;
+        }
+    }
+}
+
+.skills__bottom  {
+    @extend %flex-center;
+    @extend %space-beetwen;
+    //@include border(2px 0 0 0,rgba(255, 0, 0, 0.439));
+    @include py(32px);
+    @include px(32px);
+}
+
+.skills__name {
+    @include fs-lh(25px,20px);
+}
+
+.skills__number {
+    @include animate-text;
+    @include fs-lh(75px,65px);
+    font-weight: 500;
+    color: #B82229;
+}
+
+.skills__icon {
+    @include wh(40px);
+    background-blend-mode: multiply;
+}
+
+.is-inview .skills__number {
+    transform: translate3d(0, 0, 0);
+}

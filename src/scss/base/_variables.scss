@@ -1,0 +1,33 @@
+$font-family__default: 'Montserrat', sans-serif;
+$font-family__extended: $font-family__default;
+$font-family__title: $font-family__default;
+$font-family__alter: $font-family__default;
+$font-size__default: 16px;
+
+$line-height__default: 1;
+$line-height__content: 1.4;
+
+$color__default: #000;
+$color__dark: #313131;
+$color__light: rgba(0,0,0,.5);
+$color__brand: #bfe0dc;
+$color__gray:#e8e5e6;
+$color__white: #fff;
+
+
+$color__link: $color__default;
+$color__link_hover: $color__default;
+
+$color__border: #E5E5E5;
+
+//breakpoints
+$mobile-width: 320px;
+$tablet-width-s: 480px; //sm
+$tablet-width-m: 768px; //md
+$tablet-width-l: 992px; //lg
+
+$laptop-width: 1025px;
+$desktop-width-s: 1200px; //xl
+$desktop-width-m: 1366px;
+$desktop-width-l: 1440px; //xxl
+$desktop-width-xl: 1680px; //xxxl

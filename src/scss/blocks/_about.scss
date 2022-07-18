@@ -1,0 +1,49 @@
+.about {
+    @include py(40px,120px);
+    max-height: 100vh;
+}
+
+.about__wrapper {
+    @extend %d-flex;
+    @media (min-width:$desktop-width-m) {
+        @include my(150px,0);
+    }
+}
+
+.about__preview {
+    height: 100vh;
+    background-repeat: no-repeat;
+    img {
+        opacity: 0;
+        transform: scale(0.5);
+        transition: opacity 1.2s cubic-bezier(0.4, 0, 0, 1),transform 1.2s cubic-bezier(0.4, 0, 0, 1);
+        width: 100%;
+        object-position: top;
+    }
+}
+
+.about__col {
+    &.about__col_left {
+        background: $color__gray;
+        @media (min-width:$desktop-width-m) {
+            @include py(32px);
+            @include px(32px);
+            @include flex-width(100%/12*4);
+
+            @include my(50px);
+        }
+    }
+
+    &.about__col_right {
+        @media (min-width:$desktop-width-m) {
+            @include flex-width(100%/12*8);
+        }
+    }
+}
+
+.is-inview .about__preview {
+    img {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

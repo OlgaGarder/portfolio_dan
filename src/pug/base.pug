@@ -1,0 +1,30 @@
+include libs/mixins
+
+block meta
+    - var pageClass = '';
+    - var title = 'Базовый шаблон';
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+        title #{title}
+        meta(name="keywords" content="")
+        meta(name="description" content="")
+    body(class=pageClass)
+        .data-scroll(data-scroll-container)
+            header.header(data-scroll-section id="header")
+                .header__scroll(data-scroll data-scroll-direction="horizontal" data-scroll-speed="-15" data-scroll-target="#header")
+                    span.header__scroll-item.header__scroll-item_first() Frontend Developer 
+                .header__scroll(data-scroll data-scroll-direction="horizontal" data-scroll-speed="10" data-scroll-target="#header")
+                    span.header__scroll-item.header__scroll-item_second() Portfolio Danil Laga
+                .header__scroll(data-scroll data-scroll-direction="horizontal" data-scroll-speed="-35" data-scroll-target="#header")
+                    span.header__scroll-item.header__scroll-item_third() Welcome 
+                .header__scroll(data-scroll data-scroll-direction="horizontal" data-scroll-speed="35" data-scroll-target="#header")
+                    span.header__scroll-item.header__scroll-item_fourth() Site Portfolio
+
+            block wrapper
+
+            footer.footer

@@ -1,0 +1,63 @@
+.header {
+    background: $color__default;
+    height: 100vh;
+    @extend %flex-center;
+    @extend %space-c;
+    flex-wrap: wrap;
+    text-align: center;
+    overflow: hidden;
+}
+
+.header__scroll-item {
+    display: block;
+    @include px(0, 25px);
+    font-weight: 500;
+    color: $color__white;
+    
+    &.header__scroll-item_first {
+        z-index: 5;
+        @include fs-lh(130px,160px);
+        //@include fs-lh(55px,80px);
+        text-transform: uppercase;
+        font-family: 'Libre Franklin', sans-serif;
+
+        background-color: rgb(168, 191, 197);
+        width: 100%;
+        transform: rotate(-15deg);
+    }
+
+    &.header__scroll-item_second {
+        z-index: 10;
+        font-family: 'Cabin', sans-serif;
+        @include fs-lh(165px,75px);
+        font-weight: 300;
+        -webkit-text-stroke: 1px #fff;
+        -webkit-text-fill-color: $color__default;
+    }
+
+    &.header__scroll-item_third {
+        z-index: 5;
+        font-family: 'Cabin', sans-serif;
+       // @include my(150px,0);
+        transform: rotate(-15deg);
+        @include fs-lh(250px,80px);
+        //@include fs-lh(45px,45px);
+
+        background-color: rgb(168, 191, 197);
+        width: 100%;
+        @include py(10px);
+    }
+    &.header__scroll-item_fourth {
+        z-index: 5;
+        @include my(-400px,0);
+        font-family: 'Cabin', sans-serif;
+        font-style: italic;
+        text-transform: uppercase;
+        transform: rotate(25deg);
+        @include fs-lh(155px,160px);
+
+        background-color: rgb(168, 191, 197);
+        width: 100%;
+        @include py(10px);
+    }
+}

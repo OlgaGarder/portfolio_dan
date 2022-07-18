@@ -1,0 +1,54 @@
+extends base 
+
+block meta
+    - var pageClass = 'main-page';
+    - var title = 'Главная';
+
+block wrapper
+    section.section.section_about(data-scroll-section)
+        .about
+            .container
+                .titles 
+                    h4.h4.h4_before Всем привет
+                    h1.h1(id="about")
+                .about__wrapper
+                    .about__col.about__col_left(data-scroll) 
+                        h2.h2(data-scroll-speed="7" data-scroll-position="top") Feel the style
+                        p We create ergonomic <br>spaces with individual designs.
+                    .about__col.about__col_right(data-scroll)
+                        .about__preview(data-scroll data-scroll-speed="-1.5")
+                            +image('content/about.jpeg')
+    section.section.section_skills(data-scroll-section id="pin")
+        .skills 
+            .container
+                .titles 
+                    h4.h4.h4_before Знания
+                    h1.h1(id="skills")
+                .skills__item.skills__item_1(id="one" data-scroll data-scroll-target="#pin" data-scroll-speed="3")
+                    .skills__bottom(data-scroll) 
+                        .skills__name Html
+                        .skills__number(data-scroll-speed="3" data-scroll-position="top") 100%  
+                .skills__item.skills__item_2(id="two" data-scroll data-scroll-speed="7") 
+                    .skills__bottom(data-scroll)  
+                        .skills__name Css(Sass)
+                        .skills__number(data-scroll-speed="3" data-scroll-position="top") 80% 
+                .skills__item.skills__item_3(id="three" data-scroll data-scroll-speed="10")
+                    .skills__bottom(data-scroll)  
+                        .skills__name Js
+                        .skills__number(data-scroll-speed="3" data-scroll-position="top") 30% 
+                .skills__item.skills__item_4(id="four" data-scroll data-scroll-speed="6")
+                    .skills__bottom(data-scroll)  
+                        .skills__name Pug
+                        .skills__number(data-scroll-speed="3" data-scroll-position="top") 100% 
+                .skills__item.skills__item_5(id="five" data-scroll data-scroll-speed="6")
+                    .skills__bottom(data-scroll)  
+                        .skills__name Webpack (Gulp)
+                        .skills__number(data-scroll-speed="3" data-scroll-position="top") 50%
+                .skills__item.skills__item_6(id="six" data-scroll data-scroll-speed="2")
+                    .skills__bottom(data-scroll)  
+                        .skills__name Animate CSS
+                        .skills__number(data-scroll-speed="3" data-scroll-position="top") 50% 
+                .skills__item.skills__item_7(id="six" data-scroll data-scroll-speed="6")
+                    .skills__bottom(data-scroll)  
+                        .skills__name Bootstrap
+                        .skills__number(data-scroll-speed="3" data-scroll-position="top") 80% 
