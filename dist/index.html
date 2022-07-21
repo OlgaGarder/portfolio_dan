@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+  <link href="css/main.min.css" rel="stylesheet"></head>
+  <body class="main-page">
+    <div class="data-scroll" data-scroll-container>
+      <header class="header" data-scroll-section id="header">
+        <div class="header__scroll" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-15" data-scroll-target="#header"><span class="header__scroll-item header__scroll-item_first">Frontend Developer </span></div>
+        <div class="header__scroll" data-scroll data-scroll-direction="horizontal" data-scroll-speed="10" data-scroll-target="#header"><span class="header__scroll-item header__scroll-item_second">Portfolio Daniil Laga</span></div>
+        <div class="header__scroll" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-35" data-scroll-target="#header"><span class="header__scroll-item header__scroll-item_third">Welcome </span></div>
+        <div class="header__scroll" data-scroll data-scroll-direction="horizontal" data-scroll-speed="35" data-scroll-target="#header"><span class="header__scroll-item header__scroll-item_fourth">Site Portfolio</span></div>
+      </header>
+      <section class="section section_about" data-scroll-section>
+        <div class="about">
+          <div class="container">
+            <div class="titles"> 
+              <h4 class="h4 h4_before">Всем привет</h4>
+              <h1 class="h1" id="about"></h1>
+            </div>
+            <div class="about__wrapper">
+              <div class="about__col about__col_left" data-scroll> 
+                <h2 class="h2" data-scroll-speed="7" data-scroll-position="top">Лагутеев Даниил</h2>
+                <p>
+                  Я начинающий frontend developer с небольшим опытом работы.Одно из моих любимых занятий-саморазвитие.Я хотел бы попасть в сильную команду и прокачать профессиональные навыки.</p>
+                <h4 class="h4">Образование:</h4>
+                <p>
+                  ДГТУ: Конструкторско-технологическое обеспечение машиностроительных производств<br> Специальность: технология-машиностроения</p>
+                <p>
+                  HTML Academy: <br>HTML и CSS.Профессиональная верстка сайтов
+<br>HTML и CSS.Адаптивная верстка
+                </p>
+                <h4 class="h4">Связаться со мной:</h4><a class="about__link" href="mailto:daniillaga121@yandex.ru">daniillaga121@yandex.ru</a><a class="about__link" href="tel:+79896328758">+7(989)632-87-58</a>
+              </div>
+              <div class="about__col about__col_right" data-scroll>
+                <div class="about__preview" data-scroll data-scroll-speed="-1.5"><img class="img-fluid" src="img/content/about.jpeg" alt=""/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_portfolio" data-scroll-section>
+        <div class="portfolio"> 
+          <div class="container"> 
+            <div class="titles">
+              <h4 class="h4 h4_before">Мои работы</h4>
+              <h1 class="h1" id="portfolio"></h1>
+            </div>
+          </div>
+          <div class="portfolio__cards"> <a class="cards cards_item" href="#" style="background-image:url(/img/content/1.jpg)"></a><a class="cards cards_item" href="#" style="background-image:url(/img/content/2.jpg)"></a><a class="cards cards_item" href="#" style="background-image:url(/img/content/3.jpg)"></a><a class="cards cards_item" href="#" style="background-image:url(/img/content/4.jpg)"></a><a class="cards cards_item" href="https://www.ursus.ru/" style="background-image:url(/img/content/5.jpg)"></a><a class="cards cards_item" href="#" style="background-image:url(/img/content/6.jpg)"></a><a class="cards cards_item" href="#" style="background-image:url(/img/content/7.jpg)"></a></div>
+        </div>
+        <div class="portfolio__gsap"></div>
+      </section>
+      <section class="section section_project" data-scroll-section data-persistent> 
+        <div class="project">
+          <div class="container"> 
+            <div class="project__wrapper project__wrapper_1" id="fixed-elements">
+              <div class="project__col project__col_left" data-scroll data-scroll-sticky data-scroll-target="#fixed-elements">
+                <div class="project__about" data-scroll data-scroll-offset="200">
+                  <h2 class="h2">Интернет магазин Ursus</h2>
+                  <h4 class="h4">Верстальщик</h4>
+                  <ul class="list"> 
+                    <li class="list__item">Статичная верстка новых страниц</li>
+                    <li class="list__item">Верстка нового функционала</li>
+                    <li class="list__item">Работа с git (Bitbucket)</li>
+                  </ul>
+                  <div class="tags"> 
+                    <div class="tags__item">#Html5</div>
+                    <div class="tags__item">#Less</div>
+                    <div class="tags__item">#jQuery</div>
+                    <div class="tags__item">#Bootstrap</div>
+                    <div class="tags__item">#Webpack</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project__col project__col_right" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat style="background-color:#fff">
+                <div class="project__fixed" id="fixed-target"></div><a class="project__img fixed" href="https://www.ursus.ru/" data-scroll data-scroll-sticky data-scroll-target="#fixed-target" style="background-image:url(/img/content/lg-4.jpg"></a>
+              </div>
+            </div>
+            <div class="project__wrapper project__wrapper_2" id="fixed-elements2">
+              <div class="project__col project__col_left" data-scroll data-scroll-sticky data-scroll-target="#fixed-elements2">
+                <div class="project__about" data-scroll data-scroll-offset="200">
+                  <h2 class="h2">Учебный проект</h2>
+                  <h4 class="h4">Верстка</h4>
+                  <ul class="list"> 
+                    <li class="list__item">Статичная верстка страницы</li>
+                    <li class="list__item">Работа c swiper</li>
+                    <li class="list__item">Использование css animate</li>
+                  </ul>
+                  <div class="tags"> 
+                    <div class="tags__item">#Html5</div>
+                    <div class="tags__item">#Scss</div>
+                    <div class="tags__item">#БЭМ</div>
+                    <div class="tags__item">#Bootstrap</div>
+                    <div class="tags__item">#Webpack</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project__col project__col_right" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat style="background-color:#fff">
+                <div class="project__fixed" id="fixed-target2"></div><a class="project__img fixed" href="#" data-scroll data-scroll-sticky data-scroll-target="#fixed-target2" style="background-image:url(/img/content/lg-2.jpg)"></a>
+              </div>
+            </div>
+            <div class="project__wrapper project__wrapper_1" id="fixed-elements3">
+              <div class="project__col project__col_left" data-scroll data-scroll-sticky data-scroll-target="#fixed-elements3">
+                <div class="project__about" data-scroll data-scroll-offset="200">
+                  <h2 class="h2">Учебный проект</h2>
+                  <h4 class="h4">Верстка</h4>
+                  <ul class="list"> 
+                    <li class="list__item">Статичная верстка страниц</li>
+                    <li class="list__item">Работа c swiper</li>
+                    <li class="list__item">Многостраничник</li>
+                  </ul>
+                  <div class="tags"> 
+                    <div class="tags__item">#Html5</div>
+                    <div class="tags__item">#Scss</div>
+                    <div class="tags__item">#БЭМ</div>
+                    <div class="tags__item">#Bootstrap</div>
+                    <div class="tags__item">#Webpack</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project__col project__col_right" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat style="background-color:#fff">
+                <div class="project__fixed" id="fixed-target3"></div><a class="project__img fixed" href="#" data-scroll data-scroll-sticky data-scroll-target="#fixed-target3" style="background-image:url(/img/content/lg-1.jpg)"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_skills" data-scroll-section id="pin">
+        <div class="skills"> 
+          <div class="container">
+            <div class="titles"> 
+              <h4 class="h4 h4_before">Знания</h4>
+              <h1 class="h1" id="skills"></h1>
+            </div>
+            <div class="skills__item skills__item_1" id="one" data-scroll data-scroll-target="#pin" data-scroll-speed="3">
+              <div class="skills__bottom" data-scroll> 
+                <div class="skills__name">Html</div>
+                <div class="skills__number" data-scroll-speed="3" data-scroll-position="top">100%  </div>
+              </div>
+            </div>
+            <div class="skills__item skills__item_2" id="two" data-scroll data-scroll-speed="7"> 
+              <div class="skills__bottom" data-scroll> 
+                <div class="skills__name">Css(Sass)</div>
+                <div class="skills__number" data-scroll-speed="3" data-scroll-position="top">80% </div>
+              </div>
+            </div>
+            <div class="skills__item skills__item_3" id="three" data-scroll data-scroll-speed="10">
+              <div class="skills__bottom" data-scroll> 
+                <div class="skills__name">Js</div>
+                <div class="skills__number" data-scroll-speed="3" data-scroll-position="top">30% </div>
+              </div>
+            </div>
+            <div class="skills__item skills__item_4" id="four" data-scroll data-scroll-speed="6">
+              <div class="skills__bottom" data-scroll> 
+                <div class="skills__name">Pug</div>
+                <div class="skills__number" data-scroll-speed="3" data-scroll-position="top">100% </div>
+              </div>
+            </div>
+            <div class="skills__item skills__item_5" id="five" data-scroll data-scroll-speed="6">
+              <div class="skills__bottom" data-scroll> 
+                <div class="skills__name">Webpack (Gulp)</div>
+                <div class="skills__number" data-scroll-speed="3" data-scroll-position="top">50%</div>
+              </div>
+            </div>
+            <div class="skills__item skills__item_6" id="six" data-scroll data-scroll-speed="2">
+              <div class="skills__bottom" data-scroll> 
+                <div class="skills__name">Animate CSS</div>
+                <div class="skills__number" data-scroll-speed="3" data-scroll-position="top">50% </div>
+              </div>
+            </div>
+            <div class="skills__item skills__item_7" id="six" data-scroll data-scroll-speed="6">
+              <div class="skills__bottom" data-scroll> 
+                <div class="skills__name">Bootstrap</div>
+                <div class="skills__number" data-scroll-speed="3" data-scroll-position="top">80% </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer"></footer>
+    </div>
+  <script src="js/main.bundle.js"></script><script src="js/icons.bundle.js"></script></body>
+</html>
