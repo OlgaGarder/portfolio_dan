@@ -13,11 +13,93 @@ block wrapper
                     h1.h1(id="about")
                 .about__wrapper
                     .about__col.about__col_left(data-scroll) 
-                        h2.h2(data-scroll-speed="7" data-scroll-position="top") Feel the style
-                        p We create ergonomic <br>spaces with individual designs.
+                        h2.h2(data-scroll-speed="7" data-scroll-position="top") Лагутеев Даниил
+                        p Я начинающий frontend developer с небольшим опытом работы.Одно из моих любимых 
+                            | занятий-саморазвитие.Я хотел бы попасть в сильную команду и прокачать профессиональные навыки.
+                        h4.h4 Образование:
+                        p ДГТУ: Конструкторско-технологическое обеспечение машиностроительных производств
+                            <br> Специальность: технология-машиностроения
+                        p HTML Academy: 
+                            <br>HTML и CSS.Профессиональная верстка сайтов
+                            <br>HTML и CSS.Адаптивная верстка
+                        h4.h4 Связаться со мной:
+                        a.about__link(href="mailto:daniillaga121@yandex.ru") daniillaga121@yandex.ru
+                        a.about__link(href="tel:+79896328758") +7(989)632-87-58
                     .about__col.about__col_right(data-scroll)
                         .about__preview(data-scroll data-scroll-speed="-1.5")
                             +image('content/about.jpeg')
+    section.section.section_portfolio(data-scroll-section)
+        .portfolio 
+            .container 
+                .titles
+                    h4.h4.h4_before Мои работы
+                    h1.h1(id="portfolio")
+            .portfolio__cards 
+                a.cards.cards_item(href="#" style="background-image:url(/img/content/1.jpg)")
+                a.cards.cards_item(href="#" style="background-image:url(/img/content/2.jpg)")
+                a.cards.cards_item(href="#" style="background-image:url(/img/content/3.jpg)")
+                a.cards.cards_item(href="#" style="background-image:url(/img/content/4.jpg)")
+                a.cards.cards_item(href="https://www.ursus.ru/" style="background-image:url(/img/content/5.jpg)")
+                a.cards.cards_item(href="#" style="background-image:url(/img/content/6.jpg)")
+                a.cards.cards_item(href="#" style="background-image:url(/img/content/7.jpg)")
+        .portfolio__gsap
+    section.section.section_project(data-scroll-section data-persistent) 
+        .project
+            .container 
+                .project__wrapper.project__wrapper_1(id="fixed-elements")
+                    .project__col.project__col_left(data-scroll data-scroll-sticky data-scroll-target="#fixed-elements")
+                        .project__about(data-scroll data-scroll-offset="200")
+                            h2.h2 Интернет магазин Ursus
+                            h4.h4 Верстальщик
+                            ul.list 
+                                li.list__item Статичная верстка новых страниц
+                                li.list__item Верстка нового функционала
+                                li.list__item Работа с git (Bitbucket)
+                            .tags 
+                                .tags__item #Html5
+                                .tags__item #Less
+                                .tags__item #jQuery
+                                .tags__item #Bootstrap
+                                .tags__item #Webpack
+                    .project__col.project__col_right(data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat style="background-color:#fff")
+                        .project__fixed(id="fixed-target")
+                        a.project__img.fixed(href="https://www.ursus.ru/" data-scroll data-scroll-sticky data-scroll-target="#fixed-target" style="background-image:url(/img/content/lg-4.jpg")
+                .project__wrapper.project__wrapper_2(id="fixed-elements2")
+                    .project__col.project__col_left(data-scroll data-scroll-sticky data-scroll-target="#fixed-elements2")
+                        .project__about(data-scroll data-scroll-offset="200")
+                            h2.h2 Учебный проект
+                            h4.h4 Верстка
+                            ul.list 
+                                li.list__item Статичная верстка страницы
+                                li.list__item Работа c swiper
+                                li.list__item Использование css animate
+                            .tags 
+                                .tags__item #Html5
+                                .tags__item #Scss
+                                .tags__item #БЭМ
+                                .tags__item #Bootstrap
+                                .tags__item #Webpack
+                    .project__col.project__col_right(data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat style="background-color:#fff")
+                        .project__fixed(id="fixed-target2")
+                        a.project__img.fixed(href="#" data-scroll data-scroll-sticky data-scroll-target="#fixed-target2" style="background-image:url(/img/content/lg-2.jpg)")
+                .project__wrapper.project__wrapper_1(id="fixed-elements3")
+                    .project__col.project__col_left(data-scroll data-scroll-sticky data-scroll-target="#fixed-elements3")
+                        .project__about(data-scroll data-scroll-offset="200")
+                            h2.h2 Учебный проект
+                            h4.h4 Верстка
+                            ul.list 
+                                li.list__item Статичная верстка страниц
+                                li.list__item Работа c swiper
+                                li.list__item Многостраничник
+                            .tags 
+                                .tags__item #Html5
+                                .tags__item #Scss
+                                .tags__item #БЭМ
+                                .tags__item #Bootstrap
+                                .tags__item #Webpack
+                    .project__col.project__col_right(data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat style="background-color:#fff")
+                        .project__fixed(id="fixed-target3")
+                        a.project__img.fixed(href="#" data-scroll data-scroll-sticky data-scroll-target="#fixed-target3" style="background-image:url(/img/content/lg-1.jpg)")
     section.section.section_skills(data-scroll-section id="pin")
         .skills 
             .container

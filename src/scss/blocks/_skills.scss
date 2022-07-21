@@ -1,5 +1,5 @@
 .skills {
-    @include my(250px,200px);
+    @include my(150px,200px);
     height: 100%;
     .titles {
         @include my(0,50px);
@@ -84,6 +84,9 @@
     @include fs-lh(75px,65px);
     font-weight: 500;
     color: #B82229;
+    @media (max-width:$tablet-width-s) {
+        @include fs-lh(45px,65px);
+    }
 }
 
 .skills__icon {

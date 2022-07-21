@@ -5,14 +5,41 @@
 
 .about__wrapper {
     @extend %d-flex;
-    @media (min-width:$desktop-width-m) {
+    @media (min-width:$desktop-width-s) {
         @include my(150px,0);
+    }
+
+    @media (max-width:$desktop-width-s - 1) {
+        @include my(150px,0);
+    }
+
+    @media (max-width:$tablet-width-m) {
+       flex-direction: column;
+    }
+
+    @media (max-width:$tablet-width-m) {
+        @include my(50px,0);
+    }
+}
+
+.about__link {
+    display: block;
+    @include my(15px,0);
+    color: $color__default;
+    text-decoration: none;
+    transition: all 0.5s;
+    &:hover {
+        opacity: 0.5;
     }
 }
 
 .about__preview {
     height: 100vh;
     background-repeat: no-repeat;
+    @media (max-width:$tablet-width-m) {
+        height: 500px;
+        @include py(50px,0);
+    }
     img {
         opacity: 0;
         transform: scale(0.5);
@@ -25,18 +52,37 @@
 .about__col {
     &.about__col_left {
         background: $color__gray;
-        @media (min-width:$desktop-width-m) {
+        @media (min-width:$desktop-width-s) {
             @include py(32px);
             @include px(32px);
             @include flex-width(100%/12*4);
 
             @include my(50px);
         }
+        @media (max-width:$desktop-width-s - 1) {
+            @include py(32px);
+            @include px(32px);
+            @include flex-width(100%/12*4);
+
+            @include my(50px);
+        }
+        @media (max-width:$tablet-width-m) {
+            @include flex-width(100%/8*8);
+            @include py(12px);
+            @include px(12px);
+            @include my(0px);
+        }
     }
 
     &.about__col_right {
-        @media (min-width:$desktop-width-m) {
+        @media (min-width:$desktop-width-s) {
             @include flex-width(100%/12*8);
+        }
+        @media (max-width:$desktop-width-s - 1) {
+            @include flex-width(100%/12*8);
+        }
+        @media (max-width:$tablet-width-m) {
+            @include flex-width(100%/8*8);
         }
     }
 }

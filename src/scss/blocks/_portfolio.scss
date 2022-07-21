@@ -1,0 +1,42 @@
+.portfolio {
+    @include my(350px,0);
+    @media (max-width:$desktop-width-l) {
+        @include my(250px,0);
+    }
+    @media (max-width:$tablet-width-m) {
+        @include my(350px,0);
+        overflow: hidden;
+    }
+}
+
+.portfolio__cards  {
+    @extend %flex-center;
+    @media (max-width:$tablet-width-m) {
+        overflow: scroll;
+        margin-bottom: -30px;
+        padding-bottom: 30px;
+    }
+    @media (max-width:$tablet-width-s) {
+        overflow: scroll;
+        margin-bottom: -30px;
+        padding-bottom: 30px;
+    }
+}
+
+.cards {
+    @include mx(0,30px);
+    @include my(100px,0);
+    
+    &.cards_item {
+        @include flex-width(100%/12*2);
+        height: 190px;
+        opacity: 0.8;
+        mix-blend-mode: multiply;
+        @media (max-width:$tablet-width-m) {
+            @include flex-width(100%/12*3);
+        }
+        @media (max-width:$tablet-width-s) {
+            @include flex-width(100%/8*6);
+        }
+    }
+}

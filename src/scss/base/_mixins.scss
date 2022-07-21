@@ -139,12 +139,12 @@
 
   @media (max-width:$desktop-width-s - 1) {
     font-size: 24px;
-    line-height: 20px;
+    line-height: 30px;
   }
 
   @media (max-width:$tablet-width-m - 1) {
     font-size: 24px;
-    line-height: 20px;
+    line-height: 30px;
   }
 }
 
@@ -182,7 +182,7 @@
 }
 
 @mixin p {
-
+  margin: 15px 0;
   @media (min-width:$desktop-width-s) {
     font-size: 20px;
     line-height: 25px;
@@ -190,12 +190,12 @@
 
   @media (max-width:$desktop-width-s - 1) {
     font-size: 16px;
-    line-height: 16px;
+    line-height: 20px;
   }
 
   @media (max-width:$tablet-width-m - 1) {
     font-size: 14px;
-    line-height: 14px;
+    line-height: 18px;
   }
 }
 

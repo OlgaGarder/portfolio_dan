@@ -11,3 +11,9 @@ new TypeIt("#skills", {
     speed: 145,
     loop: true,
 }).go();
+
+new TypeIt("#portfolio", {
+    strings: "Мое портфолио",
+    speed: 145,
+    loop: true,
+}).go();
